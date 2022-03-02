@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: steelblue;
+    font-family: 'Lato', sans-serif;
+    
+}
+h1,h2,h3,h4,h5,h6{
+    
+    letter-spacing: 1.5;
+}
+
+/*------------------ estilos Header----------------- */
+.header{
+    height: 60px;
+}
+
+.header .contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo, .icon-bars{
+    margin: 5px;
+    color: #FA58B6;
+    text-shadow: 5px 5px 5px #000;
+}
+
+.icon-bars{
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    background-color: #1A1A40;
+    text-shadow: none;
+    color: #FA58B6;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 5px;
+    margin-left: auto;
+    cursor: pointer;
+    transform: rotate(0);
+    transition: transform 0.5s ease-in-out;
+    
+    
+}
+/*------------------ estilos Nav----------------- */
+.nav{
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    width: 100%;
+    transition: all .5s ease-in-out;
+}
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+} 
+
+.menu__link{
+    display: block;
+    padding: 15px;
+    background-color: #270082;
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.5s ease-in;
+}
+.menu__link:hover, .selected{
+    background-color: #7b0bc0;
+    color: #FA58B6;
+    
+    
+}
+
+/* clases desde menu.js */
+.mostrar{
+    left: 0;
+}
+.change-logo{
+    transform: rotate(180deg);
+  
+    
+}
+
+
+
+/* ------------------banner styles-------------- */
+.banner{
+    margin-top: -60px;
+    position:relative;
+    z-index: -100;
+}
+.banner img{
+    width: 100%;
+}
+.banner .contenedor{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    color: #ffffff;
+    text-shadow: 5px 5px 5px #000000;
+    text-align: center;
+}
+
+.banner__text{
+    display: none;
+}
+.btn-banner{
+    background-color: #254762;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+.btn-banner:hover{
+    background-color: #ffffff;
+    color: #254762;
+}
+
+/*---------------- estilos info------------- */
+.info__columna{
+
+   background:#254762;
+   color: #fff;
+   padding: 10px;
+   margin-bottom: 30px;
+}
+
+.info__columna img{
+    width: 500px;
+    height: 300px;
+}
